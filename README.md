@@ -31,32 +31,34 @@ The crypto clustering challenge, aims to use your knowledge of Python and unsupe
 8. Visualize and compare the results using hvPlot.
 
 ## Part 2: Results <a name="result"></a>
-Your task in this assignment is to aggregate the data found in the Citi Bike Trip History Logs and find two unexpected phenomena.
 
-1.  Elbow curve for the original data.
+1. Scatter plot of cryptocurrency clusters based on the original data.
    
 <p align="center">
-<img src="Images/crypto.jpeg" alt="crypto graphic" width="500" height="300"  >
+<img src="Images/market_scaled_plot.png" alt="original market" width="600" height="300"  >
 </p>
 
-2. Elbow curve for the PCA data.
+2.  Elbow curve for the original data. The best value for 'k' is 4.
    
 <p align="center">
-<img src="Images/crypto.jpeg" alt="crypto graphic" width="500" height="300"  >
+<img src="Images/df_elbow_plot.png" alt="elbow original" width="600" height="300"  >
 </p>
 
-3. Scatter plot of cryptocurrency clusters based on the original data.
+3. Scatter plot of cryptocurrency clusters based on the PCA data.
 
 <p align="center">
-<img src="Images/crypto.jpeg" alt="crypto graphic" width="500" height="300"  >
+<img src="Images/pca_market_plot.png" alt="PCA scattered" width="600" height="300"  >
 </p>
 
-4. Scatter plot of cryptocurrency clusters based on the PCA data.
+4. Elbow curve for the PCA data. The best value for 'k' when using the PCA data is 4.
 
 <p align="center">
-<img src="Images/crypto.jpeg" alt="crypto graphic" width="500" height="300"  >
+<img src="Images/elbow_pca_plot.png" alt="PCA elbow" width="600" height="300"  >
 </p>   
 
 ---
 ## Part 3: Conclusion <a name="conclusion"></a>   
-In conclusion, this Tableau analysis provides a comprehensive overview of the trends and patterns in Citibike usage over a specified time period. Through the creation of interactive dashboards and visualizations, key insights have been extracted and presented, highlighting trends in user type, and usage, as well as trip patterns based on hours and weekdays. One noteworthy phenomenon observed from the overall analysis is the high usage of the Citibike service by residents of Jersey City, New Jersey, primarily for commuting purposes. This analysis serves as a valuable resource for anyone interested in understanding the usage of Citibike and exploring the data behind this popular bike-sharing service. I hope that this work will inspire further research and investigation into the data, and encourage others to build upon the insights presented here.
+
+After visually analyzing the cluster analysis results, what is the impact of using fewer features to cluster the data using K-Means?
+The impact of using PCA data resulted in tighter clusters, it also resulted in more entries within cluster 0 and cluster 1 than the original analysis did.
+
